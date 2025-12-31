@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon-white.png">
+    <title>Rick and Morty Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./images/Rick_and_Morty.svg.png" alt="Rick_and_Morty">
+        </div>
+    </header>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a class="btn all" href="#">Ver Todos</a></li>
+            <li class="nav-item"><a class="btn humans" href="#">Humanos</a></li>
+            <li class="nav-item"><a class="btn aliens" href="#">Aliens</a></li>
+            <li class="nav-item"><a class="btn animals" href="#">Animales</a></li>
+            <li class="nav-item"><a class="btn Cronenberg" href="#">Cronenberg</a></li>
+            <li class="nav-item"><a class="btn Poopybutthole" href="#">Poopybutthole</a></li>
+            <li class="nav-item"><a class="btn robot" href="#">Robot</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="loader" class="loader"></div>
+        <div class="search">
+            <input type="text" id="search-input" placeholder="Buscar por nombre (Ej: Rick, Morty, Summer....)">
+        </div>
+        <div class="allCharacters">
+            <!-- <div class="character-card">
+                <div class="card-image">
+                    <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Rick Sanchez">
+                </div>
+                <div class="card-info">
+                    <h3>Rick Sanchez</h3>
+                    <p class="status"><span class="circle alive"></span>Alive - Human</p>
+                    <p class="label">Last known location: </p>
+                    <p class="value">Earth (C-137)</p>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="pagination-container">
+            <button id="btn-prev" class="btn-nav">Anterior</button>
+            <span id="page-info">Página 1</span>
+            <button id="btn-next" class="btn-nav">Siguiente</button>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
