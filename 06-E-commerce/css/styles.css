@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --clr-main: #2BD98E;
-    --clr-main-dark: #146441;
-    --clr-white: #ececec;
-    --clr-gray: #e2e2e2;
+    --clr-main: #1a1a1a;
+    --clr-main-dark: #000000;
+    --clr-white: #ffffff;
+    --clr-gray: #f4f4f4;
     --clr-red: #961818;
+    --clr-accent: #c5a059;
 }
 
 * {
@@ -59,6 +60,7 @@ aside {
 .logo {
     font-weight: 400;
     font-size: 1.3rem;
+    color: var(--clr-accent);
 }
 
 .menu {
@@ -124,8 +126,8 @@ aside {
 }
 
 .numerito {
-    background-color: var(--clr-white);
-    color: var(--clr-main);
+    background-color: var(--clr-accent);
+    color: var(--clr-main-dark);
     padding: .15rem .25rem;
     border-radius: .25rem;
 }
@@ -136,8 +138,9 @@ aside {
 }
 
 .texto-footer {
-    color: var(--clr-main-dark);
+    color: var(--clr-accent);
     font-size: .85rem;
+    opacity: 0.7;
 }
 
 main {
@@ -182,19 +185,21 @@ main {
 
 .producto-agregar {
     border: 0;
-    background-color: var(--clr-white);
-    color: var(--clr-main);
+    background-color: var(--clr-accent);
+    color: var(--clr-main-dark);
     padding: .5rem;
     text-transform: uppercase;
     border-radius: 2rem;
     cursor: pointer;
-    border: 2px solid var(--clr-white);
+    border: 2px solid var(--clr-accent);
     transition: background-color .2s, color .2s;
+    font-weight: 600;
 }
 
 .producto-agregar:hover {
     background-color: var(--clr-main);
     color: var(--clr-white);
+    border-color: var(--clr-main);
 }
 
 /*CARRITO*/
@@ -276,13 +281,14 @@ main {
 
 .carrito-acciones-comprar {
     border: 0;
-    background-color: var(--clr-main);
+    background-color: var(--clr-accent);
     padding: 1rem;
-    color: var(--clr-white);
+    color: var(--clr-main-dark);
     text-transform: uppercase;
     cursor: pointer;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    font-weight: 700;
 }
 
 .disabled {
@@ -356,16 +362,17 @@ main {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color: var(--clr-main-dark);
     }
 
     .header-mobile .logo{
-        color: var(--clr-gray);
+        color: var(--clr-accent);
     }
 
     .open-menu,
     .close-menu{
         background-color: transparent;
-        color: var(--clr-gray);
+        color: var(--clr-accent);
         border: 0;
         font-size: 2rem;
         cursor: pointer;
